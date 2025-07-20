@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R&S - Consultoria para MEI e Serviços Digitais</title>
+  <link rel="icon" type="imagens/favicon.png" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="logo" style="display: flex; align-items: center;">
+          <img src="imagens/logo 2.png" alt="Logo R&S Consultoria" style="height: 100px; margin-right: 100px;">
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Desktop Navigation -->
+  <nav class="nav-desktop">
+    <a href="#inicio" class="nav-link active" data-section="inicio">Início</a>
+    <a href="#servicos" class="nav-link" data-section="servicos">Serviços</a>
+    <a href="#sobre" class="nav-link" data-section="sobre">Sobre nós</a>
+    <a href="#contato" class="nav-link" data-section="contato">Contato</a>
+  </nav>
+
+  <!-- Mobile menu button -->
+  <button class="mobile-menu-btn" id="mobileMenuBtn">
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+  </button>
+  </div>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div class="nav-mobile" id="mobileNav">
+    <a href="#inicio" class="nav-link-mobile" data-section="inicio">Início</a>
+    <a href="#servicos" class="nav-link-mobile" data-section="servicos">Serviços</a>
+    <a href="#sobre" class="nav-link-mobile" data-section="sobre">Sobre nós</a>
+    <a href="#contato" class="nav-link-mobile" data-section="contato">Contato</a>
+  </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title"><br>
+          Transforme sua <span class="text-accent">ideia</span> em<br>
+          um <span class="text-accent">negócio de sucesso</span>
+        </h1>
+        <p class="hero-description">
+          Oferecemos consultoria especializada para MEI, criação de sites profissionais e
+          serviços de design para impulsionar seu negócio no mercado digital.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="scrollToSection('servicos')">
+            Nossos Serviços
+            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <polyline points="9,18 15,12 9,6"></polyline>
+            </svg>
+          </button>
+          <button class="btn btn-secondary" onclick="scrollToSection('contato')">
+            Fale Conosco
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servicos" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="section-description">
+          Soluções completas para levar seu negócio ao próximo nível
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Consultoria para MEI</h3>
+          <p class="service-description">
+            Orientação completa para abertura, gestão e crescimento do seu negócio como Microempreendedor Individual.
+          </p>
+          <ul class="service-features">
+            <li>✓ Abertura gratuita de MEI</li>
+            <li>✓ Contratação de funcionário</li>
+            <li>✓ Obrigações Acessórias</li>
+            <li>✓ Emissão de notas fiscais</li>
+            <li>✓ Emissão de DAS</li>
+            <li>✓ Emissão da DASN-SIMEI</li>
+            <li>✓ Software para gestão MEI,<br>em breve...</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16,18 22,12 16,6"></polyline>
+              <polyline points="8,6 2,12 8,18"></polyline>
+            </svg>
+          </div>
+          <h3 class="service-title">Criação de Sites</h3>
+          <p class="service-description">
+            Desenvolvimento de sites modernos, responsivos e otimizados para converter visitantes em clientes.
+          </p>
+          <ul class="service-features">
+            <li>✓ Design responsivo</li>
+            <li>✓ SEO otimizado</li>
+            <li>✓ Integração com redes sociais</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="service-title">Serviços de Design</h3>
+          <p class="service-description">
+            Criação de identidade visual completa para fortalecer sua marca e destacar seu negócio.
+          </p>
+          <ul class="service-features">
+            <li>✓ Logotipos</li>
+            <li>✓ Identidade visual</li>
+            <li>✓ Design para redes sociais</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2 class="section-title">Sobre Nós</h2>
+          <p class="about-text">
+            Somos uma equipe especializada em ajudar empreendedores a transformar suas ideias em
+            negócios prósperos. Com anos de experiência no mercado, oferecemos soluções personalizadas
+            que atendem às necessidades específicas de cada cliente.
+          </p>
+          <p class="about-text">
+            Nossa missão é democratizar o acesso a serviços de qualidade para pequenos negócios e
+            microempreendedores, fornecendo as ferramentas necessárias para competir no mercado digital.
+          </p>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-number">100+</div>
+              <div class="stat-label">Clientes Atendidos</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">95%</div>
+              <div class="stat-label">Satisfação</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Anos de Experiência</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-features">
+          <h3 class="features-title">Por que escolher nossos serviços?</h3>
+          <ul class="features-list">
+            <li>✓ Atendimento personalizado e humanizado</li>
+            <li>✓ Preços justos e acessíveis</li>
+            <li>✓ Suporte contínuo após a entrega</li>
+            <li>✓ Metodologia comprovada</li>
+            <li>✓ Foco em resultados mensuráveis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contato" class="contact">
+    <div class="container">
+      <h2 class="section-title">Entre em Contato</h2>
+      <p class="section-description">Envie sua mensagem e retornaremos em breve!</p>
+
+      <form action="https://formsubmit.co/meiconsultoria@outlook.com.br" method="POST" class="contact-form">
+        <div class="form-group">
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h3 class="contact-title">Fale Conosco</h3>
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-label">Telefone</p>
+                  <p class="contact-value">(51) 99948-3619</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-label">Email</p>
+                  <p class="contact-value">meiconsultoria@outlook.com.br</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-label">Localização</p>
+                  <p class="contact-value">Atendimento online para todo o Brasil</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp Button -->
+            <button class="whatsapp-btn" onclick="openWhatsApp()">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                </path>
+              </svg>
+              Falar no WhatsApp
+            </button>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <form action="https://formsubmit.co/meiconsultoria@outlook.com.br" method="POST" class="contact-form"
+              id="contactForm">
+              <div class="form-group">
+                <label for="nome" class="form-label">Nome completo *</label>
+                <input type="text" id="nome" name="nome" required class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" id="email" name="email" required class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="telefone" required class="form-label">Telefone *</label>
+                <input type="tel" id="telefone" name="telefone" required class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="servico" class="form-label">Serviço de interesse *</label>
+                <select id="servico" name="servico" class="form-input">
+                  <option value="">Selecione um serviço</option>
+                  <option value="consultoria-mei">Consultoria para MEI</option>
+                  <option value="criacao-sites">Criação de Sites</option>
+                  <option value="design">Serviços de Design</option>
+                  <option value="todos">Todos os serviços</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" optional class="form-input"
+                  placeholder="Conte-nos mais sobre seu projeto..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3 class="footer-title">R&S<span class="logo-accent">Consultoria</span></h3>
+          <p class="footer-text">
+            Transformando ideias em negócios de sucesso através de consultoria especializada e soluções digitais.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-subtitle">Serviços</h4>
+          <ul class="footer-list">
+            <li>Consultoria para MEI</li>
+            <li>Criação de Sites</li>
+            <li>Serviços de Design</li>
+            <li>Atendimento especializado para MEI em todo Brasil</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-subtitle">Contato</h4>
+          <ul class="footer-list">
+            <li>(51) 99948-3619</li>
+            <li>meiconsultoria@outlook.com.br</li>
+            <li>Passo Fundo, RS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 R&S Consultoria. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scrollTopBtn" onclick="scrollToTop()">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5,12 12,5 19,12"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
